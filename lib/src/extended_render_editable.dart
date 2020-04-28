@@ -1403,7 +1403,7 @@ class ExtendedRenderEditable extends ExtendedTextSelectionRenderObject {
     final bool lockedBoth = minLines != null && minLines == maxLines;
     final bool singleLine = maxLines == 1;
     if (singleLine || lockedMax || lockedBoth) {
-      return preferredLineHeight * maxLines;
+      return preferredLineHeight * maxLines+10;
     }
 
     // Clamp height to minLines or maxLines if needed
